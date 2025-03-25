@@ -1,0 +1,55 @@
+/* Custom Styles */
+body {
+    font-family: 'PT Sans', sans-serif;
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-top: 70px; /* Add padding for fixed header */
+}
+
+h1, h2 {
+    font-family: 'Playwrite HU', sans-serif;
+    font-weight: 700;
+    color: #456B8C;
+}
+
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    color: #193140;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    height: calc(100vh - 70px); /* Adjust height to account for header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Cards */
+.gouvernorat-card, .hotel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gouvernorat-card:hover, .hotel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* List Groups */
+.list-group-item {
+    border: none;
+    padding: 10px 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+}
+.fixed-top{
+    margin-bottom: 500px;
+
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - Tunisia Eco-Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../PFA/images/about.png" type="image/x-icon">
+
+    <style>
+        :root {
+            --primary-blue: #2c5e92;
+            --dark-blue: #1a3a5a;
+            --light-blue: #e9f2f9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-blue) !important;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: var(--dark-blue) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-blue) !important;
+        }
+        
+        .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-blue);
+        }
+        
+        .experience-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .review-card {
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .rating {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+        
+        .nav-pills .nav-link.active {
+            background-color: var(--primary-blue);
+        }
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+        
+        /* Utility Classes */
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-blue);
+        }
+        .social-icons a {
+            text-decoration: none;
+        }   
+    
+    </style>
+</head>
+<body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">
+                    Tunisia Eco-Travel
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PFA/experience.html">Expériences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PFA/reservations/reservation.html">Réservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Foire Aux Questions</h1>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question1">
+                            Comment faire une réservation ?
+                        </button>
+                    </h2>
+                    <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Vous pouvez réserver directement sur notre site via la page <a href="reservation.html">Réservation</a> ou nous contacter par téléphone ou email.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ajoutez d'autres questions/réponses -->
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question1">
+                            Comment faire une réservation ?
+                        </button>
+                    </h2>
+                    <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Vous pouvez réserver directement sur notre site via la page <a href="reservation.html">Réservation</a> ou nous contacter par téléphone ou email.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ajoutez d'autres questions/réponses -->
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#question1">
+                            Comment faire une réservation ?
+                        </button>
+                    </h2>
+                    <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Vous pouvez réserver directement sur notre site via la page <a href="../PFA/reservations/reservation.html">Réservation</a> ou nous contacter par téléphone ou email.
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h5 mb-4">Tunisia Eco-Travel</h3>
+                    <p>Plateforme leader de tourisme durable in Tunisia, connecting travelers with authentic eco-friendly experiences since 2020.</p>
+                    <div class="social-icons mt-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-4">Liens</h4>
+                    <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="reservations/about.html">À Propos</a>
+                    <a href="reservations/reservation.html">Réservation</a>
+                    <a href="reservations/contact.html">Contact</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-4">Expériences</h4>
+                    <div class="footer-links">
+                    <a href="experience.html">Tours Culturels</a>
+                    <a href="experience.html">Hébergements Éco</a>
+                    <a href="experience.html">Aventure</a>
+                    <a href="experience.html">Artisanat Local</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-4">Support</h4>
+                    <div class="footer-links">
+                    <a href="#">FAQ</a>
+                    <a href="privacy.html"  target="_blank">Confidentialité</a>
+                    <a href="terms.html"  target="_blank">Conditions</a>
+                    <a href="reservations/partenaires.html">Partenaires</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-2">
+                    <h4 class="h5 mb-4">Newsletter</h4>
+                    <form>
+                    <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                    </form>
+                    </div>
+                    </div>
+                    <hr class="mt-5 mb-4">
+                    <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Tunisia Eco-Travel. Tous droits réservés.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">fait avec <i class="fas fa-heart text-danger"></i> en Tunisia</p>
+                    </div>
+                    </div>
+                    </div>
+                    </footer>
+                    
+                    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Même footer que la page précédente -->
+</body>
+</html>

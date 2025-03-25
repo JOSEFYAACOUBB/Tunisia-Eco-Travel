@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunisia Eco-Travel - À Propos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../images/about.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-blue: #2c5e92;
+            --dark-blue: #1a3a5a;
+            --light-blue: #e9f2f9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-blue) !important;
+            font-size: 1.5rem;
+        }
+        
+        .nav-link {
+            color: var(--dark-blue) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-blue) !important;
+        }
+        
+        .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-blue);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .mission-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--light-blue);
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        footer {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-icons a {
+            color: white;
+            background-color: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+        
+        /* Utility Classes */
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-blue);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-blue);
+        }
+        .social-icons a {
+            text-decoration: none;
+        }   
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                Tunisia Eco-Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Réservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partenaires.html">Partenaires</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Notre Engagement pour un Tourisme Durable</h1>
+            <p class="lead">Découvrez l'histoire et les valeurs qui guident notre action</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-center text-lg-start">Notre Histoire</h2>
+                    <p>Fondée en 2020, Tunisia Eco-Travel est née de la passion pour notre pays et de la conviction que le tourisme peut être une force positive pour les communautés locales et l'environnement.</p>
+                    <p>Face au constat des impacts négatifs du tourisme de masse, notre équipe de guides locaux et d'experts en développement durable a décidé de créer une alternative authentique et responsable.</p>
+                    <p>Aujourd'hui, nous collaborons avec plus de 50 partenaires locaux à travers toute la Tunisie pour offrir des expériences uniques tout en préservant notre patrimoine.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../images/about.png" 
+                         alt="Notre équipe" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            
+            <div class="text-center mb-5">
+                <h2 class="section-title">Notre Mission</h2>
+                <p class="lead">Les trois piliers de notre engagement</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="mission-card">
+                        <div class="text-center mb-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 70px; height: 70px;">
+                                <i class="fas fa-globe-africa fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="h5 text-center">Environnement</h3>
+                        <p class="text-center">Minimiser notre empreinte écologique grâce à des pratiques responsables et des partenariats avec des acteurs locaux engagés.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="mission-card">
+                        <div class="text-center mb-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 70px; height: 70px;">
+                                <i class="fas fa-hands-helping fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="h5 text-center">Communautés</h3>
+                        <p class="text-center">Valoriser les savoir-faire locaux et assurer une répartition équitable des revenus touristiques.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="mission-card">
+                        <div class="text-center mb-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle" style="width: 70px; height: 70px;">
+                                <i class="fas fa-medal fa-2x text-white"></i>
+                            </div>
+                        </div>
+                        <h3 class="h5 text-center">Authenticité</h3>
+                        <p class="text-center">Offrir des expériences hors des sentiers battus qui reflètent la vraie culture tunisienne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Notre Équipe</h2>
+                <p class="lead">Les passionnés qui rendent tout cela possible</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="../images/hiba.jpg" alt="Amira">
+                        <h3 class="h5">Hiba Kasmi</h3>
+                        <p class="text-muted">Responsable Partenariats</p>
+                        <p>Ancien guide touristique, il connaît chaque recoin de la Tunisie et ses artisans.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="../images/youssef.jpg" alt="Karim">
+                        <h3 class="h5">Youssef Ben Yaacoub</h3>
+                        <p class="text-muted">Fondateur & Directeur</p>
+                        <p>Expertise en développement durable et tourisme responsable depuis 15 ans.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="../images/elyes.jpg" alt="Leila">
+                        <h3 class="h5">Elyes Attafi</h3>
+                        <p class="text-muted">Chef de Projet Écologique</p>
+                        <p>Ingénieur en environnement, il veille à la durabilité de toutes nos activités.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h5 mb-4">Tunisia Eco-Travel</h3>
+                    <p>Plateforme leader de tourisme durable en Tunisie, connectant les voyageurs avec des expériences authentiques depuis 2020.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-4">Liens</h4>
+                    <div class="footer-links">
+                        <a href="../index.html">Accueil</a>
+                        <a href="about.html">À Propos</a>
+                        <a href="reservation.html">Réservation</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-4">Expériences</h4>
+                    <div class="footer-links">
+                        <a href="../experience.html">Tours Culturels</a>
+                        <a href="../experience.html">Hébergements Éco</a>
+                        <a href="../experience.html">Aventure</a>
+                        <a href="../experience.html">Artisanat Local</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5 mb-4">Support</h4>
+                    <div class="footer-links">
+                        <a href="../faq.html">FAQ</a>
+                        <a href="../privacy.html">Confidentialité</a>
+                        <a href="../terms.html">Conditions</a>
+                        <a href="partenaires.html">Partenaires</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="h5 mb-4">Newsletter</h4>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Votre Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Tunisia Eco-Travel. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Fait avec <i class="fas fa-heart text-danger"></i> en Tunisie</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
